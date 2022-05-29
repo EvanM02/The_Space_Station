@@ -3,7 +3,14 @@
     <head>
         <meta charset="utf-8">
         <title>The Space Station | Resort</title>
-        <link rel="stylesheet" href="./css/main.css">
+
+		<!-- bootstrap links-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="./css/main.css"> 
 
     </head>
     <body>
@@ -15,6 +22,25 @@
                     <a href="#home"><li>Home</li></a>
                     <a href="#gallery"><li>Gallery</li></a>
                     <a href="#contact"><li>Reservations</li></a>
+
+                    <!--OTHER WEBSITE LINKS DROPDOWN MENU-->
+					<div class="dropdown navbar-light">
+						<a class="btn btn-secondary bg-transparent dropdown-toggle " role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+							Websites
+						</a>
+							<ul class="dropdown-menu bg-transparent border-0 " aria-labelledby="dropdownMenuLink" >
+								<li><a class="dropdown-item" href="https://evanm02.github.io/Portfolio-Website/" target="_blank">Portfolio Website</a></li>
+                                <li><a class="dropdown-item" href="https://evanm02.github.io/Academy_Cinemas/" target="_blank">Academy Cinemas Website</a></li>
+                                <li><a class="dropdown-item" href="https://evanm02.github.io/Slideshow_and_Countdown/" target="_blank">SlideShow and Countdown</a></li>
+                                <li><a class="dropdown-item" href="https://evanm02.github.io/Single_page_Website/" target="_blank">Single Page Website</a></li>
+								<li><a class="dropdown-item" href="https://evanm02.github.io/Calculator_App/" target="_blank">Calculator App</a></li>
+								<li><a class="dropdown-item" href="https://evanm02.github.io/Tic_Tac_Toe/" target="_blank">Tic Tac Toe</a></li>
+								<li><a class="dropdown-item" href="https://evanm02.github.io/Pizza_Website/" target="_blank">Pizza Website</a></li>
+								<li><a class="dropdown-item" href="https://evanm02.github.io/To_Do_App/" target="_blank">To Do App</a></li>
+							</ul>
+					</div>
+					<!--END OF DROP DOWN MENU-->
+
                 </ui>
             </div>
         </div>
@@ -35,8 +61,6 @@
             <div class="container">
                 <h1>Gallery</h1>
                 <div class="flex-container">
-
-
 
                     <!--PHOTO CONTAINER 1-->
                     <div class="photo-container">
@@ -125,7 +149,18 @@
                         </div>
                     </div>
                     <!--END PHOTO CONTAINER 8-->
-                </div>
+
+                    <!--PHOTO CONTAINER 9-->
+                    <div class="photo-container">
+                        <div class="photo">
+                                <img src="./images/Thumbnails/thumbnail_10.png" alt="sorry could not load image">
+                                <div class="photo-overlay">
+                                    <p>We have several space launches departing daily, book your flight today!</p>
+                                </div>
+                        </div>
+                    </div>
+                    <!--END PHOTO CONTAINER 9-->
+</div>
             </div>
         </section>
         <!--END GALLERY-->
@@ -141,7 +176,9 @@
                             </span>
                             </h2>
                             <p class="rsvp-text">
-                                Please provide us with your basic contact information.
+                                Please provide us with your basic 
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                contact information.
                             </p>
                             <div class="form-rsvp"><form action="" method="post">
                             <input class="rsvp" type="text" value="" placeholder="First Name "><br>
@@ -168,7 +205,5 @@
             www.thespacestation.space &nbsp;| &nbsp; &copy; 2022
         </footer>
         <!--END FOOTER-->
-
-        
     </body>
 </html>
