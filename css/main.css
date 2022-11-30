@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  font-size: 14px;
+  font-size: 0.875rem;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.42857143;
@@ -29,9 +29,9 @@ h6 {
 }
 
 h1 {
-  line-height: 50px;
+  line-height: 3.125rem;
   font-weight: 900;
-  font-size: 30px;
+  font-size: 1.875rem;
   text-transform: uppercase;
   text-align: center;
   color: #e91c1c;
@@ -86,27 +86,6 @@ section {
   margin-top: 50px;
 }
 
-.navbar {
-  height: 105px;
-  max-height: 340px;
-  display: block;
-}
-
-.container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.container-fluid {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.clearfix:after,
 .container:after,
 .navbar:after {
   clear: both;
@@ -114,28 +93,78 @@ section {
   content: "";
 }
 
-.wrap {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  /*  this ensures that the image cannot render outside
-    of their container without forcing any scrollbar */
-  overflow: hidden;
-  top: 0px;
-  left: 0px;
+/* ----------------------------------------------------------
+NAVIGATION BAR MENU STYLING
+------------------------------------------------------------*/
+.nav_bar_grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1, 1fr;
+  position: fixed;
+  align-items: center;
   text-align: center;
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  list-style: none;
+}
+.reg_menu {
+  color: #000;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 5px ;
+  border: 1px solid #9d9fa2;
+  box-shadow: 2px 2px 10px 0 rgb(0 0 0 / 50%);
+  border-radius: 6px;
+  cursor: pointer;
+  width: 1.5in;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+.reg_menu:hover {
+  color: rgb(30, 37, 124);
+  background-color: rgba(255, 255, 255, 0.735);
+  font-size: 1rem;
+  font-weight: bold;
+} 
+
+/* -------------------------------------
+DROP DOWN MENU STYLES
+---------------------------------------*/
+.btn{
+  color: #000;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 5px ;
+  border: 1px solid #9d9fa2;
+  box-shadow: 2px 2px 10px 0 rgb(0 0 0 / 50%);
+  border-radius: 6px;
+  cursor: pointer;
+  width: 1.5in;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
 }
 
-.menu-container {
-  max-height: 360px;
-  margin: 04 auto;
-  top: 0;
-  left: 0;
-  position: absolute; /* to the edge of the screen */
-  width: 100%;
-  position: fixed;
-  z-index: 100;
-  background-color: rgba (255, 255, 255, 0.5);
+.btn:hover {
+  color: rgb(30, 37, 124);
+  background-color: rgba(255, 255, 255, 0.735);
+  font-size: 1rem;
+  font-weight: bold;
+}
+.dropdown-item {
+  color: #000;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 5px;
+  margin-bottom: 3px;
+  border: 1px solid #9d9fa2;
+  box-shadow: 2px 2px 10px 0 rgb(0 0 0 / 50%);
+  border-radius: 6px;
+  cursor: pointer;
+
+}
+.dropdown-item:hover {
+  color: rgb(255, 0, 0);
+  background-color: rgba(255, 255, 255, 0.735);
+  font-weight: bold;
 }
 
 /*--------------------------------------------------
@@ -186,10 +215,12 @@ HOME SECTION STYLES
   padding: 5px;
 }
 
-/* -----------------------------------------------
-CONTACT STYLES
-------------------------------------------------*/
-
+/*----------------------------------------------------
+GALLERY SECTION 
+-----------------------------------------------------*/
+#gallery {
+  background-color: #000;
+}
 .flex-container {
   display: -webkit-flex;
   display: flex;
@@ -197,12 +228,95 @@ CONTACT STYLES
   padding: 10px;
   border-radius: 8px;
   margin: 0px auto;
-  background-color: rgba(100, 65, 0, 0.3);
-  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
+  background-color: rgb(0, 0, 0);
+  box-shadow: 3px 3px 10px 0 rgb(0, 0, 0);
 }
 
+.photo {
+  position: relative;
+  line-height: 0;
+  margin-bottom: 2em;
+  overflow: hidden;
+  border-radius: 8px;
+  padding: 1px;
+  border: 1px solid #ffffff;
+  box-shadow: 2px 2px 10px rgba(164, 164, 164, 0.7);
+}
+
+.photo-container {
+  text-align: center;
+  margin: 18px auto;
+  width: 300px;
+  height: 300px;
+}
+
+.photo-container img {
+  max-width: 100%;
+  width: 300px;
+  height: 300px;
+}
+img {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10%;
+}
+/* This Is The Paragraph That Is OverLayed On To The Image */
+section p {
+  font-size: 20px;
+}
+.photo-overlay {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/*---------------------------------------------------
+PHOTO OVERLAY TRANSITIONS 
+---------------------------------------------------*/
+
+.photo-overlay {
+  opacity: 0;
+  transition: opacity 1s;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.photo-overlay:hover {
+  opacity: 1;
+}
+
+.photo-overlay p {
+  padding-top: 40%;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+.photo img {
+  transition: transform 0.5s;
+  transform-origin: 50% 50%;
+}
+
+.photo:hover img {
+  transform: scale(1.5);
+}
+
+/* -----------------------------------------------
+CONTACT STYLES
+------------------------------------------------*/
+
 #contact {
-  background-color: #f3f3f3;
+  background-color: #000000;
 }
 
 .reservation {
@@ -210,9 +324,8 @@ CONTACT STYLES
   padding: 10px;
   border-radius: 0px;
   margin: 0px auto;
-  background-color: rgba(100, 65, 0, 0.3);
-  box-shadow: -1px -1px 1px 0 rgba(0, 0, 0, 0.1),
-    1px 2px 10px rgba(0, 0, 0, 0.5);
+  background-color: rgba(87, 87, 87, 0.3);
+
 }
 
 .reservation h2 {
@@ -227,10 +340,8 @@ CONTACT STYLES
 }
 
 .reservation h2 span {
-  width: 70%;
   text-align: center;
-  margin: 0 auto;
-  color: #13161b;
+  color: #ffffff;
   font-weight: 900;
   font-size: 1.5em;
   font-variant: small-caps;
@@ -239,9 +350,8 @@ CONTACT STYLES
 }
 
 .reservation p {
-  color: #13161b;
-  width: 50%;
-  margin: 0pt auto;
+  color: #ffffff;
+  text-align: center;
 }
 
 .reservation form {
@@ -263,9 +373,9 @@ CONTACT STYLES
   font-size: 15px;
   outline: none;
   font-weight: 600;
-  color: #8d8e8f;
+  color: #d4d0d0;
   padding: 2% 1% 2% 7%;
-  width: 80%;
+  width: 90%;
   border-top: 1px solid #090b0d;
   border-right: 2px solid #424549;
   border-bottom: 2px solid #424549;
@@ -276,19 +386,38 @@ CONTACT STYLES
   box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
   font-family: "Raleway", sans-serif;
 }
-
 .reservation input[type="text"]:hover {
-  box-shadow: 0 0 18px rgba(100, 65, 0, 0.8);
+  box-shadow: 0 0 18px rgba(243, 159, 3, 0.792);
 }
 
-.form-spacer {
-  padding: 30px 39px;
+.submit input[type="submit"] {
+  color: rgb(225, 225, 225);
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  margin: 0px 3%;
+  padding: 7px 0px;
+  width: 100px;
+  font-size: 1.125rem;
+  transition: border-color 0.3s color 0.3s background-color 0.3s;
+  border-radius: 7px;
+  background-color: #797a7b;
+  box-shadow: 3px 3px 4px rgb(0, 0, 0);
+}
+.submit input[type="submit"]:hover {
+  color: #000;
+  background-color: #8d8e8f;
+  box-shadow: 5px 5px 6px rgb(0, 0, 0);
+
+}
+.submit input[type="submit"]:active {
+  box-shadow: inset 1px 2px 15px 0 rgba(0, 0, 0, 0.5);
 }
 
 .terms {
-  margin: 30px 1px 0 0;
-  padding-left: 52px;
-  padding-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  align-items: center;
   font-size: 14px;
   line-height: 5px;
   color: #000;
@@ -299,36 +428,10 @@ CONTACT STYLES
   display: inline;
   float: right;
 }
-
 .terms:hover {
-  color: orange;
   text-decoration: underline;
+  font-weight: bolder;
 }
-
-.submit input[type="submit"] {
-  color: rgb(225, 225, 225);
-  cursor: pointer;
-  border: none;
-  font-weight: 900;
-  outline: none;
-  text-align: center;
-  font-family: "Raleway", sans-serif;
-  margin: 0px 3%;
-  padding: 7px 0px;
-  width: 25%;
-  font-size: 18px;
-  transition: border-color 0.3s color 0.3s background-color 0.3s;
-  border-radius: 7px;
-  background-color: #797a7b;
-  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3);
-}
-
-.submit input[type="submit"]:hover {
-  color: #000;
-  background-color: #8d8e8f;
-  box-shadow: inset 1px 2px 15px 0 rgba(0, 0, 0, 0.5);
-}
-
 /*------------------------------------------------------------
 FOOTER STYLES
 ------------------------------------------------------------*/
@@ -338,196 +441,5 @@ FOOTER STYLES
   color: #000;
   text-shadow: 2px 2px 6px (0, 0, 0, 0.4);
   padding: 20px 50px 20px 50px;
-  text-align: right;
-}
-
-section p {
-  font-size: 20px;
-}
-img {
-  padding-bottom: 15px;
-  padding-top: 15px;
-  max-width: 100%;
-  height: auto;
-  border-radius: 15%;
-}
-details summary {
-  text-align: left;
-  border-color: black;
-  border-style: groove;
-  cursor: pointer;
-  background-color: lightcyan;
-  border-radius: 8px;
-  width: 300px;
-  border-width: 2px;
-}
-
-details p {
-  text-align: left;
-  border-color: black;
-  border-style: groove;
-  width: 300px;
-  border-radius: 8px;
-  border-width: 1px;
-}
-
-/* ----------------------------------------------------------
-MENU SECTION ANIMATION
-------------------------------------------------------------*/
-
-.menu {
-  color: #f00;
-  font: bold 12px/18px sans-serif;
   text-align: center;
-  display: inline;
-  margin: 0% auto;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  margin-right: 200px;
-}
-
-.menu li {
-  color: #000;
-  background-color: rgba(255, 255, 255, 1);
-  display: inline-block;
-  margin: 0% auto;
-  position: relative;
-  padding: 15px 4%;
-  border: 1px solid #9d9fa2;
-  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
-  border-radius: 6px;
-  cursor: pointer;
-  transition-property: background;
-  transition-duration: 0.4s;
-  transition-delay: 0s;
-  transition-timing-function: ease-in-out;
-}
-
-.menu li:hover {
-  color: #f00;
-  background-color: rgba(100, 65, 0, 0.3);
-}
-
-/*----------------------------------------------------
-GALLERY SECTION ANIMATION
------------------------------------------------------*/
-
-.photo {
-  position: relative;
-  line-height: 0;
-  margin-bottom: 2em;
-  overflow: hidden;
-  border-radius: 8px;
-  padding: 1px;
-  border: 1px solid #021a40;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-}
-
-.photo-container {
-  text-align: center;
-  margin: 18px auto;
-  width: 300px;
-  height: 200px;
-}
-
-.photo-container img {
-  max-width: 100%;
-  width: 300px;
-  height: 200px;
-}
-
-.photo-overlay {
-  color: #fff;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding-left: 20px;
-  padding-right: 20px;
-  justify-content: center; /* for centering text inside .photo-overly 8?*/
-  align-items: center;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.white-head {
-  color: #c9bdaa;
-  margin-top: 5%;
-}
-
-/*---------------------------------------------------
-PHOTO OVERLAY TRANSITIONS 
----------------------------------------------------*/
-
-.photo-overlay {
-  opacity: 0;
-  transition: opacity 0.5s;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.photo-overlay:hover {
-  opacity: 1;
-}
-
-.photo-overlay p {
-  padding-top: 45px;
-  width: 100%;
-  height: 100%;
-  color: #fff;
-}
-
-.photo img {
-  transition: transform 0.5s;
-  transform-origin: 50% 50%;
-}
-
-.photo:hover img {
-  transform: scale(1.1);
-}
-
-/* -------------------------------------
-
-DROP DOWN MENU STYLES
-
----------------------------------------*/
-
-.dropdown {
-  color: #000;
-  background-color: rgba(255, 255, 255, 1);
-  display: inline-block;
-  margin: 0% auto;
-  margin-left: 482px;
-  position: relative;
-  padding: 6px 4%;
-  border: 1px solid #9d9fa2;
-  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
-  border-radius: 6px;
-  transition-property: background;
-  transition-duration: 0.4s;
-  transition-delay: 0s;
-  transition-timing-function: ease-in-out;
-  z-index: 200;
-}
-.dropdown:hover {
-  color: #f00;
-  background-color: rgba(100, 65, 0, 0.3);
-}
-#dropdownMenuLink {
-  color: #000;
-  border: none;
-}
-#dropdownMenuLink:hover {
-  color: #f00;
-}
-.dropdown-item {
-  color: #000;
-  background-color: rgba(255, 255, 255, 1);
-  border: 1px solid #9d9fa2;
-  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
-}
-.dropdown-item:hover {
-  color: #f00;
-  background-color: rgba(100, 65, 0, 0.3);
 }
