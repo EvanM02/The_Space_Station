@@ -150,6 +150,7 @@ NAVIGATION BAR MENU STYLING
 DROP DOWN MENU STYLES
 ---------------------------------------*/
 .btn {
+  text-decoration: none;
   color: #000;
   background-color: rgba(255, 255, 255, 1);
   padding: 5px;
@@ -168,20 +169,28 @@ DROP DOWN MENU STYLES
   font-size: 1rem;
   font-weight: bold;
 }
-.dropdown-item {
-  color: #000;
-  background-color: rgba(255, 255, 255, 1);
-  padding: 5px;
-  margin-bottom: 3px;
-  border: 1px solid #9d9fa2;
-  box-shadow: 2px 2px 10px 0 rgb(0 0 0 / 50%);
-  border-radius: 6px;
-  cursor: pointer;
+.dropdown-menu {
+  color: white !important;
+  font-weight: 600 !important;
+  transition: all 0.5s ease-in-out;
+  background-color: darkgray !important;
+  box-shadow: 4px 4px black;
 }
-.dropdown-item:hover {
-  color: rgb(255, 0, 0);
-  background-color: rgba(255, 255, 255, 0.735);
-  font-weight: bold;
+.dropdown-item {
+  color: rgb(0, 0, 0) ;
+  font-weight: 400 !important;
+  animation: 2s fadeInn !important ;
+  animation-fill-mode: forwards !important ;
+  visibility: hidden;
+}
+@keyframes fadeInn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 /*--------------------------------------------------
