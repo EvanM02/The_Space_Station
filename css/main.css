@@ -111,12 +111,12 @@ section {
 }
 
 /* ----------------------------------------------------------
-NAVIGATION BAR MENU STYLING
-------------------------------------------------------------*/
+  NAVIGATION BAR MENU STYLING
+  ------------------------------------------------------------*/
 .nav_bar_grid {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1, 1fr;
   position: fixed;
   align-items: center;
@@ -147,8 +147,8 @@ NAVIGATION BAR MENU STYLING
 }
 
 /* -------------------------------------
-DROP DOWN MENU STYLES
----------------------------------------*/
+  DROP DOWN MENU STYLES
+  ---------------------------------------*/
 .btn {
   text-decoration: none;
   color: #000;
@@ -177,7 +177,7 @@ DROP DOWN MENU STYLES
   box-shadow: 4px 4px black;
 }
 .dropdown-item {
-  color: rgb(0, 0, 0) ;
+  color: rgb(0, 0, 0);
   font-weight: 400 !important;
   animation: 2s fadeInn !important ;
   animation-fill-mode: forwards !important ;
@@ -194,8 +194,161 @@ DROP DOWN MENU STYLES
 }
 
 /*--------------------------------------------------
-HOME SECTION STYLES
---------------------------------------------------*/
+  LOCATIONS DROPDOWN MENU AND BUTTON
+  --------------------------------------------------*/
+/* Basic CSS for styling for the button, dropdown menu content, and the anchor tags.
+it also includes basic animation for the dropdown content */
+.dropdown_container {
+  width: 1.5in;
+}
+#dropdown_btn {
+  text-decoration: none;
+  color: #000;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 5px;
+  border: 1px solid #9d9fa2;
+  box-shadow: 2px 2px 10px 0 rgb(0 0 0 / 50%);
+  border-radius: 6px;
+  cursor: pointer;
+  width: 1.5in;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+#dropdown_btn:hover {
+  color: rgb(30, 37, 124);
+  background-color: rgba(255, 255, 255, 0.735);
+  font-size: 1rem;
+  font-weight: bold;
+}
+#dropdown_btn:active {
+  box-shadow: 0px 0px 0px 0px;
+}
+
+#dropdown_content {
+  position: absolute;
+  z-index: 10;
+  min-width: 9rem;
+  margin: 0.125rem 0 0;
+  text-align: left;
+  background-color: lightgray;
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 4px 4px black;
+  border: 2px groove rgb(255, 255, 255);
+  transition: all 0.5s ease-in-out;
+}
+#dropdown_content li {
+  list-style-type: none;
+  margin-left: -5px;
+}
+
+#dropdown_content a {
+  border-radius: 8px;
+  animation: 3s fadeInn;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-decoration: none;
+  display: block;
+}
+#dropdown_content a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+#dropdown_content a:active {
+  color: red;
+}
+@keyframes fadeInn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+/* STYLING FOR THE BUTTON AND NAV MENU THAT WILL BE HIDDEN BY DEFAULT 
+BUT ONCE HIT A CERTAIN WINDOW SIZE IT WILL BE SHOWN.*/
+
+#hidden_nav_container {
+  width: 1.5in;
+}
+#hidden_nav_btn {
+  text-decoration: none;
+  color: #000;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 5px;
+  border: 1px solid #9d9fa2;
+  box-shadow: 2px 2px 10px 0 rgb(0 0 0 / 50%);
+  border-radius: 6px;
+  cursor: pointer;
+  width: 1.5in;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+#hidden_nav_btn:hover {
+  color: rgb(30, 37, 124);
+  background-color: rgba(255, 255, 255, 0.735);
+  font-size: 1rem;
+  font-weight: bold;
+}
+#hidden_nav_btn:active {
+  box-shadow: 0px 0px 0px 0px;
+}
+
+#hidden_nav_content {
+  position: absolute;
+  z-index: 10;
+  min-width: 9rem;
+  margin: 0.125rem 0 0;
+  text-align: left;
+  background-color: lightgray;
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 4px 4px black;
+  border: 2px groove rgb(255, 255, 255);
+  transition: all 0.5s ease-in-out;
+  display: none;
+}
+#hidden_nav_content li {
+  list-style-type: none;
+  padding-bottom: 10px;
+}
+
+#hidden_nav_content a {
+  border-radius: 8px;
+  animation: 3s fadeInn;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-decoration: none;
+  display: none;
+}
+#hidden_nav_content a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+#hidden_nav_content a:active {
+  color: red;
+}
+@keyframes fadeInn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+/*--------------------------------------------------
+  HOME SECTION STYLES
+  --------------------------------------------------*/
 
 #home {
   background: url(../images/planets.png) no-repeat 50% 50%;
@@ -242,8 +395,8 @@ HOME SECTION STYLES
 }
 
 /*----------------------------------------------------
-GALLERY SECTION 
------------------------------------------------------*/
+  GALLERY SECTION 
+  -----------------------------------------------------*/
 #gallery {
   background-color: #000;
 }
@@ -306,9 +459,19 @@ section p {
   background: rgba(0, 0, 0, 0.5);
 }
 
+.img_link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.img_link:hover {
+  color: rgb(255, 0, 0);
+  text-decoration: underline;
+}
+
 /*---------------------------------------------------
-PHOTO OVERLAY TRANSITIONS 
----------------------------------------------------*/
+  PHOTO OVERLAY TRANSITIONS 
+  ---------------------------------------------------*/
 
 .photo-overlay {
   opacity: 0;
@@ -338,8 +501,8 @@ PHOTO OVERLAY TRANSITIONS
 }
 
 /* -----------------------------------------------
-CONTACT STYLES
-------------------------------------------------*/
+  CONTACT STYLES
+  ------------------------------------------------*/
 
 #contact {
   background-color: #000000;
@@ -452,8 +615,8 @@ CONTACT STYLES
 }
 
 /*------------------------------------------------------------
-FOOTER STYLES
-------------------------------------------------------------*/
+  FOOTER STYLES
+  ------------------------------------------------------------*/
 
 #footer {
   background-color: rgba(100, 65, 0, 0.3);
@@ -464,14 +627,43 @@ FOOTER STYLES
 }
 
 /*------------------------------------------------------------
-Media Queries 
-------------------------------------------------------------*/
+  Media Queries 
+  ------------------------------------------------------------*/
 
+@media screen and (max-width: 835px) {
+  #hidden_nav_container {
+    display: block !important;
+  }
+  #hidden_nav_content {
+    display: block;
+  }
+
+  #hidden_nav_content a:nth-child(1) {
+    display: block;
+  }
+  #hidden_nav_content a:nth-child(3) {
+    display: block;
+  }
+  .reg_menu:nth-child(5) {
+    display: none !important;
+  }
+  .reg_menu:nth-child(4) {
+    display: none !important;
+  }
+}
 @media screen and (max-width: 767px) {
   .reservation h2 {
     width: 100%;
     font-weight: 400;
     font-size: 1.1em;
+  }
+}
+@media screen and (max-width: 669px) {
+  #hidden_nav_content a:nth-child(2) {
+    display: block;
+  }
+  .reg_menu:nth-child(3) {
+    display: none !important;
   }
 }
 
@@ -485,9 +677,48 @@ Media Queries
   }
 }
 
+@media screen and (max-width: 471px) {
+  .dropdown {
+    width: 1in;
+  }
+  .btn {
+    width: 1in;
+    font-weight: 100;
+  }
+  .btn {
+    font-weight: 100;
+  }
+  .dropdown_container {
+    width: 1in;
+  }
+  #dropdown_btn {
+    width: 1in;
+  }
+  #dropdown_btn:hover {
+    font-weight: 100;
+    font-size: inherit;
+  }
+  #hidden_nav_container {
+    width: 1in;
+  }
+  #hidden_nav_btn {
+    width: 1in;
+  }
+  #hidden_nav_btn:hover {
+    font-weight: 100;
+    font-size: inherit;
+  }
+  #hidden_nav_content {
+    min-width: 5rem;
+  }
+  .hidden_item {
+    margin-left: -30px;
+  }
+}
+
 @media screen and (max-width: 463px) {
   .nav_bar_grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   .reg_menu:nth-child(3) {
     grid-column-start: 1;
@@ -498,6 +729,11 @@ Media Queries
   }
 }
 
+@media screen and (max-width: 445px) {
+  .reservation form {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 430px) {
   .reg_menu:nth-child(3) {
     margin-left: 17%;
@@ -509,13 +745,9 @@ Media Queries
     margin-left: 11%;
   }
 }
+
 @media screen and (max-width: 350px) {
   .reg_menu:nth-child(3) {
     margin-left: 8%;
-  }
-}
-@media screen and (max-width: 445px) {
-  .reservation form {
-    width: 100%;
   }
 }

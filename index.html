@@ -118,10 +118,73 @@
         </ul>
       </div>
       <!--END OF DROP DOWN MENU-->
+ <!-- DROPDOWN MENU FOR LOCATIONS -->
+ <div class="dropdown_container">
+  <button id="dropdown_btn" onclick="toggleDropdown();">
+    Locations &#8681;
+  </button>
+  <div id="dropdown_content" style="display: none">
+    <ul>
+      <li>
+        <a
+          href="https://evanm07.github.io/The_Space_Station/locations/moon "
+        >
+          Moon
+        </a>
+        <br />
+      </li>
+      <li>
+        <a
+          href="https://evanm07.github.io/The_Space_Station/locations/pluto "
+        >
+          Pluto
+        </a>
+        <br />
+      </li>
+      <li>
+        <a
+          href="https://evanm07.github.io/The_Space_Station/locations/europa  "
+        >
+          Europa </a
+        ><br />
+      </li>
+      <li>
+        <a
+          href="https://evanm07.github.io/The_Space_Station/locations/neptune "
+        >
+          Neptune </a
+        ><br />
+      </li>
+      <li>
+        <a
+          href="https://evanm07.github.io/The_Space_Station/locations/venus  "
+        >
+          Venus
+        </a>
+        <br />
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- THE END OF LOCATIONS DROPDOWN MENU-->
 
+      <!-- HOME PAGE NAV BUTTONS -->
       <a class="reg_menu" href="#home"><li>Home</li></a>
       <a class="reg_menu" href="#gallery"><li>Gallery</li></a>
       <a class="reg_menu" href="#contact"><li>Reservations</li></a>
+
+      <div id="hidden_nav_container" style="display: none">
+        <button id="hidden_nav_btn" onclick="toggleHiddenDropdown();">
+          Navigation &#8681;
+        </button>
+        <div id="hidden_nav_content" style="display: none">
+          <ul>
+            <a class="hidden_item" href="#contact"><li>Reservations</li></a>
+            <a class="hidden_item" href="#home"><li>Home</li></a>
+            <a class="hidden_item" href="#gallery"><li>Gallery</li></a>
+          </ul>
+        </div>
+      </div>
     </div>
     <!--END NAV-->
 
@@ -133,224 +196,268 @@
     </div>
     <!--END HOME-->
 
-    <!--GALLERY-->
-    <section id="gallery">
-      <div class="container">
-        <h1>Gallery</h1>
-        <div class="flex-container">
-          <!--PHOTO CONTAINER 1-->
-          <div class="photo-container">
-            <div class="photo">
-              <img
-                src="./images/Thumbnails/thumbnail_2.png"
-                alt="Sorry could not load image"
-              />
-              <div class="photo-overlay">
-                <p>
-                  We have several space launches departing daily, book your
-                  flight today!
-                </p>
-              </div>
-            </div>
-          </div>
-          <!--END PHOTO CONTAINER 1-->
-
-          <!--PHOTO CONTAINER 2-->
-          <div class="photo-container">
-            <div class="photo">
-              <img
-                src="./images/Thumbnails/thumbnail_3.png"
-                alt="Sorry could not load image"
-              />
-              <div class="photo-overlay">
-                <p>
-                  We have several space launches departing daily, book your
-                  flight today!
-                </p>
-              </div>
-            </div>
-          </div>
-          <!--END PHOTO CONTAINER 2-->
-
-          <!--PHOTO CONTAINER 3-->
-          <div class="photo-container">
-            <div class="photo">
-              <img
-                src="./images/Thumbnails/thumbnail_4.png"
-                alt="Sorry could not load image"
-              />
-              <div class="photo-overlay">
-                <p>
-                  We have several space launches departing daily, book your
-                  flight today!
-                </p>
-              </div>
-            </div>
-          </div>
-          <!--END PHOTO CONTAINER 3-->
-
-          <!--PHOTO CONTAINER 4-->
-          <div class="photo-container">
-            <div class="photo">
-              <img
-                src="./images/Thumbnails/thumbnail_5.png"
-                alt="Sorry could not load image"
-              />
-              <div class="photo-overlay">
-                <p>
-                  We have several space launches departing daily, book your
-                  flight today!
-                </p>
-              </div>
-            </div>
-          </div>
-          <!--END PHOTO CONTAINER 4-->
-
-          <!--PHOTO CONTAINER 5-->
-          <div class="photo-container">
-            <div class="photo">
-              <img
-                src="./images/Thumbnails/thumbnail_6.png"
-                alt="Sorry could not load image"
-              />
-              <div class="photo-overlay">
-                <p>
-                  We have several space launches departing daily, book your
-                  flight today!
-                </p>
-              </div>
-            </div>
-          </div>
-          <!--END PHOTO CONTAINER 5-->
-
-          <!--PHOTO CONTAINER 6-->
-          <div class="photo-container">
-            <div class="photo">
-              <img
-                src="./images/Thumbnails/thumbnail_7.png"
-                alt="Sorry could not load image"
-              />
-              <div class="photo-overlay">
-                <p>
-                  We have several space launches departing daily, book your
-                  flight today!
-                </p>
-              </div>
-            </div>
-          </div>
-          <!--END PHOTO CONTAINER 6-->
-
-          <!--PHOTO CONTAINER 7-->
-          <div class="photo-container">
-            <div class="photo">
-              <img
-                src="./images/Thumbnails/thumbnail_8.png"
-                alt="Sorry could not load image"
-              />
-              <div class="photo-overlay">
-                <p>
-                  We have several space launches departing daily, book your
-                  flight today!
-                </p>
-              </div>
-            </div>
-          </div>
-          <!--END PHOTO CONTAINER 7-->
-
-          <!--PHOTO CONTAINER 8-->
-          <div class="photo-container">
-            <div class="photo">
-              <img
-                src="./images/Thumbnails/thumbnail_9.png"
-                alt="Sorry could not load image"
-              />
-              <div class="photo-overlay">
-                <p>
-                  We have several space launches departing daily, book your
-                  flight today!
-                </p>
-              </div>
-            </div>
-          </div>
-          <!--END PHOTO CONTAINER 8-->
-
-          <!--PHOTO CONTAINER 9-->
-          <div class="photo-container">
-            <div class="photo">
-              <img
-                src="./images/Thumbnails/thumbnail_10.png"
-                alt="Sorry could not load image"
-              />
-              <div class="photo-overlay">
-                <p>
-                  We have several space launches departing daily, book your
-                  flight today!
-                </p>
-              </div>
-            </div>
-          </div>
-          <!--END PHOTO CONTAINER 9-->
-        </div>
-      </div>
-    </section>
-    <!--END GALLERY-->
-
-    <!--RSVP-->
-    <section id="contact">
-      <div class="container">
-        <div class="heading-padding">
-          <h1 class="heading-padding">Reservations</h1>
-          <div class="reservation">
-            <h2>
-              <span>
-                Your adventure is just around the moon.<br />
-                Reserve your flight today!
-              </span>
-            </h2>
-            <p class="rsvp-text">
-              Please input your contact information <br />
-              and we'll be sure to contact you soon
+ <!--GALLERY-->
+ <section id="gallery">
+  <div class="container">
+    <h1>Gallery</h1>
+    <div class="flex-container">
+      <!--PHOTO CONTAINER 1-->
+      <div class="photo-container">
+        <div class="photo">
+          <img
+            src="./images/Thumbnails/thumbnail_2.png"
+            loading="lazy"
+            alt="Earths Moon"
+          />
+          <div class="photo-overlay">
+            <p>
+              We have several space launches departing daily, book your
+              flight today! <br />
+              <a
+                class="img_link"
+                href="https://evanm07.github.io/The_Space_Station/locations/moon"
+              >
+                Check out more about a trip to the Moon!
+              </a>
             </p>
-            <div class="form-rsvp">
-              <form action="" method="post">
-                <input
-                  class="rsvp"
-                  type="text"
-                  value=""
-                  placeholder="First Name "
-                /><br />
-                <input
-                  class="rsvp"
-                  type="text"
-                  value=""
-                  placeholder="Last Name "
-                /><br />
-                <input
-                  class="rsvp"
-                  type="text"
-                  value=""
-                  placeholder="Email Address "
-                /><br />
-                <input
-                  class="rsvp"
-                  type="text"
-                  value=""
-                  placeholder="Phone Number "
-                /><br />
-
-                <div class="submit">
-                  <input type="submit" value="Submit" />
-                </div>
-                <div>
-                  <label class="terms">Terms and Conditions </label>
-                </div>
-              </form>
-            </div>
           </div>
         </div>
       </div>
-    </section>
-    <!--END RSVP-->
+      <!--END PHOTO CONTAINER 1-->
+
+      <!--PHOTO CONTAINER 2-->
+      <div class="photo-container">
+        <div class="photo">
+          <img
+            src="./images/Thumbnails/thumbnail_5.png"
+            loading="lazy"
+            alt="Sorry could not load image"
+          />
+          <div class="photo-overlay">
+            <p>
+              We have several space launches departing daily, book your
+              flight today!
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--END PHOTO CONTAINER 2-->
+
+      <!--PHOTO CONTAINER 3-->
+      <div class="photo-container">
+        <div class="photo">
+          <img
+            src="./images/Thumbnails/thumbnail_4.png "
+            loading="lazy"
+            alt="Sorry could not load image"
+          />
+          <div class="photo-overlay">
+            <p>
+              We have several space launches departing daily, book your
+              flight today! <br />
+              <a
+                class="img_link"
+                href=" https://evanm07.github.io/The_Space_Station/locations/neptune "
+              >
+                Check out more about a trip to Neptune!
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--END PHOTO CONTAINER 3-->
+
+      <!--PHOTO CONTAINER 4-->
+      <div class="photo-container">
+        <div class="photo">
+          <img
+            src="./images/Thumbnails/thumbnail_3.png"
+            loading="lazy"
+            alt="Sorry could not load image"
+          />
+          <div class="photo-overlay">
+            <p>
+              We have several space launches departing daily, book your
+              flight today! <br />
+              <a
+                class="img_link"
+                href=" https://evanm07.github.io/The_Space_Station/locations/pluto "
+              >
+                Check out more about a trip to Pluto!</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--END PHOTO CONTAINER 4-->
+
+      <!--PHOTO CONTAINER 5-->
+      <div class="photo-container">
+        <div class="photo">
+          <img
+            src="./images/Thumbnails/thumbnail_6.png"
+            loading="lazy"
+            alt="Sorry could not load image"
+          />
+          <div class="photo-overlay">
+            <p>
+              We have several space launches departing daily, book your
+              flight today!
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--END PHOTO CONTAINER 5-->
+
+      <!--PHOTO CONTAINER 6-->
+      <div class="photo-container">
+        <div class="photo">
+          <img
+            src="./images/Thumbnails/thumbnail_7.png"
+            loading="lazy"
+            alt="Sorry could not load image"
+          />
+          <div class="photo-overlay">
+            <p>
+              We have several space launches departing daily, book your
+              flight today! <br />
+              <a
+                class="img_link"
+                href=" https://evanm07.github.io/The_Space_Station/locations/venus "
+              >
+                Check out more about a trip to Venus!
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--END PHOTO CONTAINER 6-->
+
+      <!--PHOTO CONTAINER 7-->
+      <div class="photo-container">
+        <div class="photo">
+          <img
+            src="./images/Thumbnails/thumbnail_8.png"
+            loading="lazy"
+            alt="Sorry could not load image"
+          />
+          <div class="photo-overlay">
+            <p>
+              We have several space launches departing daily, book your
+              flight today!
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--END PHOTO CONTAINER 7-->
+
+      <!--PHOTO CONTAINER 8-->
+      <div class="photo-container">
+        <div class="photo">
+          <img
+            src=" ./images/Thumbnails/thumbnail_9.png"
+            loading="lazy"
+            alt="Sorry could not load image"
+          />
+          <div class="photo-overlay">
+            <p>
+              We have several space launches departing daily, book your
+              flight today! <br />
+              <a
+                class="img_link"
+                href=" https://evanm07.github.io/The_Space_Station/locations/europa "
+              >
+                Check out more about a trip to Europa
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--END PHOTO CONTAINER 8-->
+
+      <!--PHOTO CONTAINER 9-->
+      <div class="photo-container">
+        <div class="photo">
+          <img
+            src="./images/Thumbnails/thumbnail_10.png"
+            loading="lazy"
+            alt="Sorry could not load image"
+          />
+          <div class="photo-overlay">
+            <p>
+              We have several space launches departing daily, book your
+              flight today!
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--END PHOTO CONTAINER 9-->
+    </div>
+  </div>
+</section>
+<!--END GALLERY-->
+
+<!--RSVP-->
+<section id="contact">
+  <div class="container">
+    <div class="heading-padding">
+      <h1 class="heading-padding">Reservations</h1>
+      <div class="reservation">
+        <h2>
+          <span>
+            Your adventure is just around the moon.<br />
+            Reserve your flight today!
+          </span>
+        </h2>
+        <p class="rsvp-text">
+          Please input your contact information <br />
+          and we'll be sure to contact you soon
+        </p>
+        <div class="form-rsvp">
+          <form action="" method="post">
+            <input
+              class="rsvp"
+              type="text"
+              value=""
+              placeholder="First Name "
+            /><br />
+            <input
+              class="rsvp"
+              type="text"
+              value=""
+              placeholder="Last Name "
+            /><br />
+            <input
+              class="rsvp"
+              type="text"
+              value=""
+              placeholder="Email Address "
+            /><br />
+            <input
+              class="rsvp"
+              type="text"
+              value=""
+              placeholder="Phone Number "
+            /><br />
+            <input
+              class="rsvp"
+              type="text"
+              value=""
+              placeholder="Location "
+            /><br />
+            <div class="submit">
+              <input type="submit" value="Submit" />
+            </div>
+            <div>
+              <label class="terms">Terms and Conditions </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--END RSVP-->
 
     <!--FOOTER-->
     <footer id="footer">
