@@ -1,0 +1,8 @@
+/* this is to remove the default header that github adds */
+
+@import "{{ site.theme }}";
+
+header {
+  display: none;
+}
+
