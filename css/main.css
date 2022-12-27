@@ -252,6 +252,9 @@ it also includes basic animation for the dropdown content */
   font-size: 1.1rem;
   text-decoration: none;
   display: block;
+  margin-top: 10px;
+  margin-bottom: -20px;
+  margin-left: 10px;
 }
 #dropdown_content a:hover {
   color: blue;
@@ -316,6 +319,9 @@ BUT ONCE HIT A CERTAIN WINDOW SIZE IT WILL BE SHOWN.*/
 #hidden_nav_content li {
   list-style-type: none;
   padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: -10px;
+  margin-left: -10px;
 }
 
 #hidden_nav_content a {
