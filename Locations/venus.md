@@ -70,7 +70,7 @@ title:false
         <div class="list_one">
           <ui>
             <li><strong>Distance: </strong> 246.33 million km</li>
-            <li><strong>Travel Time: </strong> 6 hours Days</li>
+            <li><strong>Travel Time: </strong> 6 hours </li>
             <li>
               <strong>Length of Stay:</strong> One Week not including travel
               time
