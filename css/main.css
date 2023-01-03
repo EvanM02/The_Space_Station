@@ -699,7 +699,6 @@ section p {
   }
   #dropdown_content {
     width: 7rem;
-    background-color: rgb(128, 0, 0);
   }
   #dropdown_content ul {
     margin-left: -15px;
