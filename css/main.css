@@ -698,8 +698,8 @@ section p {
     width: 1in;
   }
   #dropdown_content {
-    width: 4rem;
-    background-color: green;
+    width: 3rem;
+    background-color: rgb(32, 0, 128);
   }
   #dropdown_content ul {
     margin-left: -15px;
