@@ -227,7 +227,7 @@ it also includes basic animation for the dropdown content */
 #dropdown_content {
   position: absolute;
   z-index: 10;
-  min-width: 9rem;
+  width: 9rem;
   margin: 0.125rem 0 0;
   text-align: left;
   background-color: lightgray;
@@ -698,8 +698,8 @@ section p {
     width: 1in;
   }
   #dropdown_content {
-    width: 3rem;
-    background-color: rgb(32, 0, 128);
+    width: 7rem;
+    background-color: rgb(128, 0, 0);
   }
   #dropdown_content ul {
     margin-left: -15px;
