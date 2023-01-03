@@ -697,6 +697,12 @@ section p {
   .dropdown_container {
     width: 1in;
   }
+  #dropdown_content {
+    width: 7rem;
+  }
+  #dropdown_content ul {
+    margin-left: -15px;
+  }
   #dropdown_btn {
     width: 1in;
   }
@@ -716,6 +722,11 @@ section p {
   }
   #hidden_nav_content {
     min-width: 5rem;
+  }
+  #hidden_nav_content a {
+    padding-left: 10px;
+    padding-right: 5px;
+    text-align: center;
   }
   .hidden_item {
     margin-left: -30px;
