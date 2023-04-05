@@ -10,7 +10,6 @@ function toggleDropdown() {
     }
   }
 
-
   function toggleHiddenDropdown() {
     var i = document.getElementById("hidden_nav_content");
     if (i.style.display === "none") {
@@ -28,9 +27,5 @@ function toggleDropdown() {
       document.getElementById("hidden_nav_content").style.display = "none";
     });
   }
-
-
-
-
 
 
