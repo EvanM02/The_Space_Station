@@ -33,7 +33,7 @@ title:false
 Neptune is the eighth planet from the sun and the fourth largest in our solar system. It's known for its beautiful blue color, which is caused by methane in its atmosphere. Neptune is so far from the sun that it takes almost 165 Earth years to orbit the sun just once! Despite being so far away, Neptune is still pretty hot, with temperatures reaching as high as -353 degrees Fahrenheit. It also has the strongest winds in the solar system, reaching speeds of over 1,000 miles per hour! But don't worry, you won't be able to feel them from the safety of the submarine and hotel. Neptune is a mysterious and fascinating place, and we have much more to learn about it.
 </p>
 <p id="final_planet_info_para">
-"Get ready to blast off on an interplanetary adventure through the far-reaching corners of our solar system, to the blue giant planet with a majestic methane-induced hue, a bone-chilling temperature range, and the strongest winds in the solar system!" </p>
+Get ready to blast off on an interplanetary adventure through the far-reaching corners of our solar system, to the blue giant planet with a majestic methane-induced hue, a bone-chilling temperature range, and the strongest winds in the solar system! </p>
 </div>
 </section>
 <img
